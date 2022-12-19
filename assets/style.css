@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+#view-high-scores:hover {
+  cursor: pointer;
+}
+
+.start {
+  align-items: center;
+  text-align: center;
+}
+
+.start h1, .start p {
+  text-align: center;
+}
+
+.questions {
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: auto;
+}
+
+.end h1, .end p {
+  text-align: left;
+}
+
+.show {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner h2 {
+  text-align: center;
+}
