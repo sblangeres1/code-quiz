@@ -2,21 +2,59 @@
   box-sizing: border-box;
 }
 
+/* Body */
 body {
   background: white;
-  color: black;
+  color:purple;
   margin: 0;
   padding: 0;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Header */
 header {
   display: flex;
   justify-content: space-between;
   margin: auto;
+  width: 85%;
 }
 
 #view-high-scores:hover {
   cursor: pointer;
+  color:plum;
+}
+
+header h4 {
+  padding-left: 20px;
+  font-size: 20px;
+  display: inline;
+}
+
+.timer {
+  font-size: 2opx;
+  color: black;
+  display: inline;
+  text-align: right;
+  padding-right: 20px;
+}
+
+/* Main */
+.container {
+  padding: 20px;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+h1 {
+  color:black;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+p {
+  color: black;
+  font-size: 20px;
 }
 
 .start {
@@ -31,11 +69,25 @@ header {
 .questions {
   align-items: flex-start;
   justify-content: flex-start;
+  padding: 40px 20px;
   margin: auto;
 }
 
 .end h1, .end p {
   text-align: left;
+}
+
+.end input {
+  outline: thick;
+  border-width: 1px;
+  padding: 5px;
+  width: 35%;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.end input:focus {
+  border: 2px solid darkslateblue;
 }
 
 .show {
@@ -46,10 +98,88 @@ header {
   display: none;
 }
 
+#question {
+  color: black;
+  text-align: left;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+#high-score {
+  text-align: left;
+}
+
+/* Buttons */
+.btn {
+  background: darkslateblue;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 3px grey;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background: purple;
+  border-radius: 10px;
+  box-shadow: 0 2px grey;
+  cursor: pointer;
+}
+
+.btn:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 0 grey;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-rows: repeat(4,auto);
+  grid-gap: 5px;
+  margin: 20px 0;
+}
+
+.startend {
+  width: 25%;
+  margin-top: 10px;
+}
+
+.answerbtn {
+  width: 50%;
+  text-align: left;
+  font-size: 20px;
+}
+
+/* Correct or Wrong */
 .banner {
+  font-size: 20px;
   text-align: center;
+  color: grey;
+  font-style: italic;
+  margin: 0 100px;
 }
 
 .banner h2 {
+  border-top: 2px solid grey;
+  margin: 0 auto;
   text-align: center;
+  padding-top: 5px;
+}
+
+/* High Scores */
+ol {
+  list-style-type: number;
+}
+
+li:nth-child(odd) {
+  background: lightgray;
+}
+
+li {
+  font-size: 30px;
 }
